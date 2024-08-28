@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" id="logo">
+        <p>Encriptador de texto</p>
+    </header>
+    
+    <div class="container">
+        <section class="input-section">
+            <textarea id="input-text" placeholder="Ingrese texto aquí"></textarea>
+            <p class="warning"><img src="img/warning.png" alt="warning icon"> Letras minúsculas y sin acentos ni caracteres especiales</p>
+            <div class="button-container">
+                <div class="primary-button-container">
+                    <button id="encrypt-button">Encriptar</button>
+                    <button id="decrypt-button">Desencriptar</button>
+                </div>
+                <div class="secondary-button-container">
+                    <button id="paste-button">Pegar</button>
+                    <button id="clear-button">Borrar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <div id="output-text">
+                <img src="img/muñeco.png" alt="No Message">
+                <p id="output-text-big">Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Creado por Vicente Arturo Rodríguez Pereda 2024
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
